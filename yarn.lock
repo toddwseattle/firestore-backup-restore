@@ -74,7 +74,7 @@
     string-format-obj "^1.1.0"
     through2 "^2.0.3"
 
-"@google-cloud/firestore@^0.11.2", "@google-cloud/firestore@googleapis/nodejs-firestore":
+"@google-cloud/firestore@^0.11.2":
   version "0.11.2"
   resolved "https://codeload.github.com/googleapis/nodejs-firestore/tar.gz/d66d66ed7027e284c56580f39e941bdbe95d8be5"
   dependencies:
@@ -1411,8 +1411,8 @@ diff-match-patch@^1.0.0:
   resolved "https://registry.yarnpkg.com/diff-match-patch/-/diff-match-patch-1.0.0.tgz#1cc3c83a490d67f95d91e39f6ad1f2e086b63048"
 
 diff@^3.2.0:
-  version "3.4.0"
-  resolved "https://registry.yarnpkg.com/diff/-/diff-3.4.0.tgz#b1d85507daf3964828de54b37d0d73ba67dda56c"
+  version "3.5.0"
+  resolved "https://registry.yarnpkg.com/diff/-/diff-3.5.0.tgz#800c0dd1e0a8bfbc95835c202ad220fe317e5a12"
 
 dir-glob@^2.0.0:
   version "2.0.0"
