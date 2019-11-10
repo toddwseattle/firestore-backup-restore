@@ -1,11 +1,11 @@
 {
   "name": "firestore-backup-restore",
-  "version": "1.3.1",
+  "version": "1.3.2-0",
   "description": "Google Firebase Firestore backup and restore tool",
-  "homepage": "https://github.com/willhlaw/node-firestore-backup-restore",
-  "repository": "https://github.com/willhlaw/node-firestore-backup-restore.git",
-  "bugs": "https://github.com/willhlaw/node-firestore-backup-restore/issues",
-  "author": "Will Lawrence <will.lawrence@gmail.com>",
+  "homepage": "https://github.com/toddwseattle/firestore-backup-restore",
+  "repository": "https://github.com/toddwseattle/firestore-backup-restore.git",
+  "bugs": "https://github.com/toddwseattle/firestore-backup-restore/issues",
+  "author": "Todd Warren <todd@warrenfamily.org>",
   "license": "MIT",
   "keywords": [
     "firebase",
@@ -30,7 +30,6 @@
     "@google-cloud/firestore": "FIXME - Can be removed once next version after 0.11.2 is released which exposes all the Firestore types so instanceof can be used"
   },
   "dependencies": {
-    "@google-cloud/firestore": "googleapis/nodejs-firestore",
     "babel-cli": "^6.26.0",
     "babel-preset-env": "^1.6.1",
     "babel-preset-flow": "^6.23.0",

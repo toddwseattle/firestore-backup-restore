@@ -1,5 +1,7 @@
 # firestore-backup-restore
 
+This is a moderately fixed version of firestore-backeup-restore which appears to have been abandoned in 2017. Refer to the original repository [node-firestore-backup-restore](https://github.com/willhlaw/node-firestore-backup-restore) produced by willhlaw. What follows is his original instructions.
+
 A Google Firebase Firestore backup and restore tool. This project was forked from https://github.com/steadyequipment/node-firestore-backup.git and extended.
 
 You can **backup** your Firestore documents to disk, **clone** data from one Firestore to another, and **restore** from disk.
@@ -48,14 +50,14 @@ Usage: firestore-backup-restore [options]
 
 Options:
 
-* `-V`, `--version` output the version number
-* `-a`, `--accountCredentials` `<path>` Google Cloud account credentials JSON file.
-* `-B`, `--backupPath` `<path>` Path to store backup.
-* `-a2`, `--restoreAccountCredentials` `<path>` Google Cloud account credentials JSON file for restoring documents.
-* `-P`, `--prettyPrint` JSON backups done with pretty-printing.
-* `-S`, `--stable` JSON backups done with stable-stringify.
-* `-J`, `--plainJSONBackup` JSON backups done without preserving any type information. - Lacks full fidelity restore to Firestore. - Can be used for other export purposes.
-* `-h`, `--help` output usage information
+- `-V`, `--version` output the version number
+- `-a`, `--accountCredentials` `<path>` Google Cloud account credentials JSON file.
+- `-B`, `--backupPath` `<path>` Path to store backup.
+- `-a2`, `--restoreAccountCredentials` `<path>` Google Cloud account credentials JSON file for restoring documents.
+- `-P`, `--prettyPrint` JSON backups done with pretty-printing.
+- `-S`, `--stable` JSON backups done with stable-stringify.
+- `-J`, `--plainJSONBackup` JSON backups done without preserving any type information. - Lacks full fidelity restore to Firestore. - Can be used for other export purposes.
+- `-h`, `--help` output usage information
 
 ### Backup:
 
@@ -95,7 +97,7 @@ firestore-backup-restore --backupPath /backups/myDatabase --restoreAccountCreden
 
 If you want the documents to look pretty on disk and don't mind giving up extra disk space, then use the `--prettyPrint` option.
 
-* `-P`, `--prettyPrint` - JSON backups done with pretty-printing.
+- `-P`, `--prettyPrint` - JSON backups done with pretty-printing.
 
 Example:
 
@@ -107,7 +109,7 @@ firestore-backup-restore --accountCredentials path/to/account/credentials/file.j
 
 If you want the json documents to have sorted keys, then use the `--stable` option.
 
-* `-S`, `--stable` - JSON backups done with stable-stringify.
+- `-S`, `--stable` - JSON backups done with stable-stringify.
 
 Example:
 
@@ -121,9 +123,9 @@ To change the default behavior and backup the Firestore documents as plain JSON 
 
 The default is to save type information. In order for restore to work with full fidelity for field types and to work with clone for `reference`s to be changed from the original Firestore to the destination Firestore, then documents need to be saved to disk in a format that preserves the type information (that is gleaned through inspection by `constructDocumentObjectToBackup` during save). If this default behavior is not wanted and you want the regular JSON document to be saved to disk instead, then use `--plainJSONBackup`.
 
-* `-J`, `--plainJSONBackup` - JSON backups done without preserving any type information
-  * Lacks full fidelity restore to Firestore
-  * Can be used for other export purposes
+- `-J`, `--plainJSONBackup` - JSON backups done without preserving any type information
+  - Lacks full fidelity restore to Firestore
+  - Can be used for other export purposes
 
 Example:
 
