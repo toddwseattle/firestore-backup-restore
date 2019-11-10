@@ -44,7 +44,7 @@
     "babel-eslint": "7",
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "babel-plugin-transform-runtime": "^6.23.0",
-    "eslint": "3.x",
+    "eslint": "4.x",
     "eslint-plugin-flowtype": "^2.39.1",
     "flow-bin": "^0.64.0",
     "jest": "^22.1.4",
